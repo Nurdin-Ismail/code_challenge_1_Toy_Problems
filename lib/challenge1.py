@@ -11,7 +11,7 @@
     # or "pm") as input.
 
     # Your task is to return a four-digit string that encodes that 
-    # time in 24-hour time. 
+    # time in 24-hour time.  
 
     # Notes:
     # By convention, noon is 12:00 pm, and midnight is 12:00 am.
