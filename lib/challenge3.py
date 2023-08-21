@@ -53,6 +53,8 @@ def consonant_value(str1):
 
     vowels = "aeiou"
 
+    return_value = None
+
     #split string by character.
 
     print('a' in vowels)
@@ -87,6 +89,7 @@ def consonant_value(str1):
     
             
     print(res2)   
+    numbers = []
 
     for j in res2:
         # if j == alphabetic_number_position[j]:
@@ -94,9 +97,31 @@ def consonant_value(str1):
         print(j)
         # print(alphabetic_number_position[j])
 
-        if j in alphabetic_number_position:
-            print(True)
+        if len(j) > 1:
+            print(len(j))
+            lst = []
+            for item in j:
+                print(item)
+                lst.append(alphabetic_number_position[item])
+                print(lst)
+                sum_of_nums = sum(lst)
+                print(sum_of_nums)
+                numbers.append(sum_of_nums)
+        else:
+            if j in alphabetic_number_position:
+              numbers.append(alphabetic_number_position[j])
+              print(alphabetic_number_position[j])
 
+              print(numbers)
+
+
+    return_value = max(numbers)
+    print(return_value)
+
+    return return_value
+
+
+        
  
         
  
@@ -107,4 +132,4 @@ def consonant_value(str1):
 
     
 
-consonant_value('nightingale')
+consonant_value('zodiac')
